@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleDialog"
+        android:layout_margin="16dp"
+        android:textSize="18sp" />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you want to delete this element?"
+            android:textColor="@android:color/black" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfirm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="confirm"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnConfirm"
+            android:layout_alignBottom="@+id/btnConfirm"
+            android:layout_toLeftOf="@+id/btnConfirm"
+            android:layout_toStartOf="@+id/btnConfirm"
+            android:text="cancel"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+</LinearLayout>
